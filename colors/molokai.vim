@@ -19,6 +19,7 @@ if version > 580
     endif
 endif
 let g:colors_name="molokai"
+let g:molokai_original=1
 
 if exists("g:molokai_original")
     let s:molokai_original = g:molokai_original
@@ -109,15 +110,19 @@ hi WildMenu        guifg=#66D9EF guibg=#000000
 if s:molokai_original == 1
    hi Normal          guifg=#F8F8F2 guibg=#272822
    hi Comment         guifg=#75715E
-   hi CursorLine                    guibg=#3E3D32
-   hi CursorColumn                  guibg=#3E3D32
+"   hi CursorLine                    guibg=#3E3D32
+"   hi CursorColumn                  guibg=#3E3D32
+   hi CursorLine                    guibg=#3E9932
+   hi CursorColumn                  guibg=#3E9932
    hi LineNr          guifg=#BCBCBC guibg=#3B3A32
    hi NonText         guifg=#BCBCBC guibg=#3B3A32
 else
    hi Normal          guifg=#F8F8F2 guibg=#1B1D1E
    hi Comment         guifg=#465457
-   hi CursorLine                    guibg=#293739
-   hi CursorColumn                  guibg=#293739
+"   hi CursorLine                    guibg=#293739
+"   hi CursorColumn                  guibg=#293739
+   hi CursorLine                    guibg=#3E9932
+   hi CursorColumn                  guibg=#3E9932
    hi LineNr          guifg=#BCBCBC guibg=#232526
    hi NonText         guifg=#BCBCBC guibg=#232526
 end
@@ -137,10 +142,10 @@ if &t_Co > 255
    hi Define          ctermfg=81
    hi Delimiter       ctermfg=241
 
-   hi DiffAdd                     ctermbg=24
+   hi DiffAdd         ctermbg=24
    hi DiffChange      ctermfg=181 ctermbg=239
    hi DiffDelete      ctermfg=162 ctermbg=53
-   hi DiffText                    ctermbg=102 cterm=bold
+   hi DiffText        ctermfg=195 ctermbg=102   cterm=bold
 
    hi Directory       ctermfg=118               cterm=bold
    hi Error           ctermfg=219 ctermbg=89
@@ -149,7 +154,7 @@ if &t_Co > 255
    hi Float           ctermfg=135
    hi FoldColumn      ctermfg=67  ctermbg=16
    hi Folded          ctermfg=67  ctermbg=16
-   hi Function        ctermfg=118
+   hi Function        ctermfg=118               cterm=bold
    hi Identifier      ctermfg=208
    hi Ignore          ctermfg=244 ctermbg=232
    hi IncSearch       ctermfg=193 ctermbg=16
@@ -204,8 +209,10 @@ if &t_Co > 255
 
    hi Normal          ctermfg=252 ctermbg=233
    hi Comment         ctermfg=59
-   hi CursorLine                  ctermbg=234   cterm=none
-   hi CursorColumn                ctermbg=234
+"   hi CursorLine                  ctermbg=234   cterm=none
+"   hi CursorColumn                ctermbg=234
+   hi CursorLine                  ctermbg=34 cterm=none
+   hi CursorColumn                ctermbg=34
    hi LineNr          ctermfg=250 ctermbg=234
    hi NonText         ctermfg=250 ctermbg=234
 end
