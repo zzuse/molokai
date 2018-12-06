@@ -113,7 +113,7 @@ if s:molokai_original == 1
 "   hi CursorLine                    guibg=#3E3D32
 "   hi CursorColumn                  guibg=#3E3D32
    hi CursorLine                    guibg=#3E9932
-   hi CursorColumn                  guibg=#3E9932
+   hi CursorColumn                  guibg=#581338
    hi LineNr          guifg=#BCBCBC guibg=#3B3A32
    hi NonText         guifg=#BCBCBC guibg=#3B3A32
 else
@@ -122,7 +122,7 @@ else
 "   hi CursorLine                    guibg=#293739
 "   hi CursorColumn                  guibg=#293739
    hi CursorLine                    guibg=#3E9932
-   hi CursorColumn                  guibg=#3E9932
+   hi CursorColumn                  guibg=#581338
    hi LineNr          guifg=#BCBCBC guibg=#232526
    hi NonText         guifg=#BCBCBC guibg=#232526
 end
